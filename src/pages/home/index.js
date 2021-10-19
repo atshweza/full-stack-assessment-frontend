@@ -35,8 +35,8 @@ function Home() {
         <title>Home</title>
         <meta name='description' content='Description of Home' />
       </Helmet>
-      {/* <PromotionCard promoInfo={menu}/> */}
-      <NavBar menu={menu} onSelect={setActiveIndex}activeIndex={activeIndex} />
+       {menu &&<PromotionCard promoInfo={menu}/> }
+       {menu && <NavBar menu={menu} onSelect={setActiveIndex}activeIndex={activeIndex} />}
     </div>
   );
 }
