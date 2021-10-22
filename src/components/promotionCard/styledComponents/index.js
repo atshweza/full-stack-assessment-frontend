@@ -3,11 +3,14 @@ import { calculateRem } from '../../../utils/helpers';
 
 const StyledPromotionCard = styled.div``;
 const StyledResponsivePromo = styled.div`
+  margin-top:${calculateRem(60)};
   position: relative;
   height:100%;
+  width: 100%;
   img {
-    width:100%;
-    height:100%;
+   width: 100%;
+    height: 85vh;
+    margin-top: 50px;
   }
 `;
 const StyledResponsiveCaption = styled.div`
@@ -15,6 +18,9 @@ const StyledResponsiveCaption = styled.div`
   position: absolute;
   bottom: 0;
   width:100%;
+  align-items: center;
+  display:flex;
+  flex-direction: column;
   background-color: rgba(0, 0, 0, 0.75);
   button {
     height: ${calculateRem(50)};
